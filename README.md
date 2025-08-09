@@ -2,7 +2,7 @@
 flowchart TD
     A[启动节点] --> B[等待 MAVROS 连接 & GPS 有效]
     B --> C[记录 Home 点经纬度与AMSL]
-    C --> D[发送初始位置心跳 (100次)]
+    C --> D[发送初始位置心跳 \(100次\)]
     D --> E[等待解锁 & OFFBOARD]
     E --> F[起飞到 10 m 悬停]
     F --> G[飞往 A 点(固定坐标)]
@@ -24,4 +24,5 @@ flowchart TD
     R -- 是 --> S[关桨 Disarm]
     S --> T[保存 CSV 日志并结束]
 ```
+
 
