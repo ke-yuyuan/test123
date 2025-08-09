@@ -27,3 +27,4 @@ flowchart TD
     R -- 否 --> Q
     R -- 是 --> S[关桨 Disarm]
     S --> T[保存 CSV 日志 & 结束任务]
+```
